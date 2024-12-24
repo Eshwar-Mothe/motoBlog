@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bike,BIKE,racing,advanture,street,street fighter,budget bike,super bike,cc,mileage,motor bike,advanture bike,Engine,">
+    <title>MotoBiking</title>
+    <link rel="icon" href="logo.png">
+</head>
+<style>
+    *{
+        user-select: none;
+    }
+</style>
+<style class="body_style">
+    #a{
+        margin: 0%;
+        padding: 10px;
+        border: 10px solid rgb(0, 26, 255);
+        border-radius: 25%;
+        border-style: none inset inset none;
+        background: url(blogBG.jpg);
+        background-position: left;
+        background-size: 200px;
+        background-repeat: no-repeat;
+        font-family: Marker Felt, fantasy;
+        letter-spacing: 10px;
+        font-weight: lighter;
+        font-style: oblique;
+        font-variant: small-caps;
+        text-align: center;
+        font-size: 40px;
+        color: rgb(250, 112, 0);
+    }
+</style>
+
+<style class="article">
+    #c{
+        background-image: url("blogBG.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:auto ;
+        margin: 0%
+    }
+    #p1{
+        background: rgba(205, 205, 205, 0.8);
+        font-family: Snell Roundhand, cursive;
+        margin: 0%;
+    }
+    
+</style>
+
+<style>
+    #aside{
+        margin-top: 0%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(BG.png);
+        height: 250px;
+        width: 100%;
+        border: 2px solid pink;
+        overflow-y: auto;
+    }
+
+    #aside2{
+        margin-top:0%;
+        margin-right:0%;
+        background-position: center;
+        background-image: url(BG.png);
+        height: 250px;
+        width:200px;
+        border: 2px solid pink;
+    }
+</style>
+<style>
+    ul{
+        position: relative;
+        display: flex;
+        float: left;
+        gap: 3px;
+    }
+
+    ul li{
+        position: relative;
+        list-style: none;
+    }
+
+    ul li a{
+        position: relative;
+        font-size: 24px;
+        line-height: 50px;
+        text-decoration: none;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px 
+        rgb(250, 112, 0);
+    }
+    ul li a::before{
+        content: attr(data-text);
+        position: absolute;
+        color: var(---clr);
+        width: 0%;
+        overflow: hidden;
+        transition: 1s;
+        border-right: 8px solid var(---clr);
+        -webkit-text-stroke: 1px var(---clr);
+
+    }
+
+    ul li a:hover::before{
+        width: 100%;
+        filter: drop-shadow(0 0 25px var(---clr));
+    }
+</style>
+
+<style>
+
+    #layers{
+        border: 3px solid black;
+        height: 650px;
+        background-color: rgba(205, 205, 205, 0.8);
+    }
+    #layer1{
+
+        margin-top: 50px;
+        position: relative;
+        width: 99%;;
+        background-color: rgb(95, 158, 160);
+        z-index: 1;
+        border-style: inset;
+        padding: 3px;
+        left: 1px;
+        
+    }
+    #layer2{
+        top: -40px;
+        right: 10px;
+        margin-left: 30px;
+        background-color: rgb(222, 184, 135);
+        padding-top: 5px;
+        z-index: 2;
+        
+    }
+    #layer3{
+        top: -70px;
+        right: 30px;
+        margin-left: 70px;
+        background-color: rgb(170, 222, 135);
+        z-index: 3;
+    }
+
+    #layer4{
+        top: -100px;
+        right: 50px;
+        margin-left: 110px;
+        background-color: rgb(78, 207, 201);
+        z-index: 4;
+    }
+
+    #layer5{
+        top: -130px;
+        right: 70px;
+        margin-left: 150px;
+        background-color: rgb(103, 86, 204);
+        z-index: 5;
+    }
+    #layer6{
+        top: -160px;
+        right: 90px;
+        margin-left: 190px;
+        background-color: rgb(212, 134, 223);
+        z-index: 6;
+    }
+    #layer7{
+        top: -190px;
+        right: 70px;
+        margin-left: 150px;
+        background-color: rgb(103, 86, 204);
+        z-index: 7;
+    }
+    #layer8{
+        top: -220px;
+        right: 50px;
+        margin-left: 110px;
+        background-color: rgb(78, 207, 201);
+        z-index: 8;
+    }
+    #layer9{
+        top: -250px;
+        right: 30px;
+        margin-left: 70px;
+        background-color: rgb(170, 222, 135);
+        z-index: 9;
+    }
+    #layer10{
+        top: -280px;
+        right: 10px;
+        margin-left: 30px;
+        background-color: rgb(222, 184, 135);
+        padding-top: 5px;
+        z-index: 10;
+    }
+    #layer11{
+        top: -310px;
+        width: 99%;
+        background-color: rgb(95, 158, 160);
+        z-index: 11;
+        border-style: outset;
+        left: 5px; 
+    }
+    
+    #layer1,#layer2,#layer3,#layer4,#layer5,#layer6,#layer7,#layer8,#layer9,#layer10,#layer11{
+        height: 70px;
+        position: relative;
+        border: 3px solid rgb(250, 112, 0);
+        text-align: center;
+        border-style: outset;
+        border-radius: 30%;
+        border-style: none inset inset none;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        font-variant: small-caps;
+        letter-spacing: 3px;
+    }
+    #layer1{
+        border-style: inset;
+        margin-top: 50px;
+    }
+    
+</style>
+
+<style>
+
+    #div1,#div2,#div3,#div4,#div5{
+        float: left; 
+        width: 250px; 
+        height: 250px; 
+        border: 2px solid pink;
+        background-image: url(speed.jpg);
+        margin-left: 11px;
+        margin-top: 10px;
+    }
+
+    .p1{
+        margin-top: 0px;
+        color: rgba(31, 12, 12, 0);
+        width: 250px;
+        height: 250px;
+        font-variant: small-caps;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    #div1:hover .p1,#btype:hover .p1,#gear:hover .p1,#mileage:hover .p1,#Wheels:hover .p1{
+        background: rgb(250, 112, 0);
+        text-align:center;
+        transition-duration: 1s; 
+        display: block;
+        color: rgb(31, 12, 12);
+    }
+
+    #div2{
+        background-image: url(body\ type.jpg);
+    }
+
+    #div3{
+        background-image: url(gear.jpg);
+    }
+
+    #div4{
+        background-image: url(mileage.jpg);
+    }
+    #div5{
+        background-image: url(wheels.jpg);
+    }
+
+    a{
+        text-decoration: none;
+    }
+    a:visited{color: rgb(31, 12, 12);}
+    a:link{color: rgb(31, 12, 12);}
+
+</style>
+<body>
+<section class="heading" style="margin: 0%;">
+    <hgroup>
+        <h1 id="a">MotoBiking</h1>
+    </hgroup>
+    <marquee behavior="scroll" direction="right" loop="loop" bgcolor="red" style="font-family: Courier New, monospace;">Here is the site which provides the information about the biking and advisory for the advantures trips</marquee>
+</section>
+<section class="blog_section" id="c"> 
+    <section id="p1">
+        <hgroup>
+            <h3><u>History</u></h3>
+        </hgroup>
+    
+    <article>
+        <h5 style=" word-spacing: 5px;">
+            <strong><u><span style="background-color:rgb(0, 250, 146); font-size: 20px; letter-spacing: 5px;">Riding into Freedom</span></u></strong>:Exploring the Thrilling World of Motorbikes
+        </h5>
+        <p>
+            
+            Introduction:Welcome to our site loyal to the cheering planet of motorcycles! Here, we'll take you on an exhilarating journey through the history, education, science, and trip guide these two-turned wonders. From the early days of power-driven bicycles to the contemporary progresses of energetic motorcycles, skilled's something for each devotee and bizarre elocutionist alike. So, nail your headgear, timing your appliances, and allow's investigate the realm of motorbikes!The Evolution of 
+
+            Motorcycles
+        </p>
+        <p>
+            Discover the attracting past of motorcycles, from the creation of the first fuel-stimulate bike by Gottlieb Daimler and Wilhelm Maybach to the emblematic brands that have formed the manufacturing. Explore by means of what motorcycles have developed in terms of design, accomplishment, and range of capabilities, and gain about the pioneers and inventors the one urged the bounds of two-rotated conveyance.
+        </p>
+        <p>
+            Riding Styles and Motorcycle Types:Uncover the diverse array of motorcycles accessible contemporary, each tailor-made to distinguishing dominating styles and predilections. Whether you're attracted by sport bikes buxom for speed, risk-taking two-fold-sport motorcycles for off-road investigation, or the classic taste of cruisers, we'll investigate the traits and singular physiognomy of differing motorbike types.
+        </p>
+        <p>
+            Motorcycle Culture and Communities:Delve into the throbbing experience of motorcycle breeding and the close-intertwine societies that enclose it. Explore the allure of motorbike clubs, the friendship with clauses, and the death of jesus or the artistic representation of his death that fuels this global wonder. We'll likewise investigate the cunning of customization and the enchanting accounts behind emblematic motorbike brands and their loyal fan bases.Technological Marvels on Two Wheels:Dive into the contemporary technologies that are molding the motorbike manufacturing. From photoelectric virus like friction control and ABS to progresses in energetic motorcycles and relatedness features, we'll survey by what method science is reinforcing the oppressing knowledge, reconstructing security, and lowering tangible impact.
+        </p>
+    </article>
+   </section>
+
+  
+</section>
+
+<aside id="aside">
+    <header style="background-color: rgb(250, 112, 0); text-align: center; position: static;">Feed</header>
+    <section style="background:rgba(205, 205, 205, 0.8); width: 100%;">
+    
+        <marquee behaviour="scroll" direction="up" loop="loop" onmouseover="stop" onmouseout="start">
+            <p style="background-color: rgba(250, 112, 0); color: antiquewhite;">My name is eshwar bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
+            <p style="background-color: rgb(250, 112, 0); color: antiquewhite;">my name is Eshwar</p>
+            <p style="background-color: rgb(250, 112, 0); color: antiquewhite;">my name is Eshwar</p>
+            <p style="background-color: rgb(250, 112, 0); color: antiquewhite;">my name is Eshwar</p>
+            <p style="background-color: rgb(250, 112, 0); color: antiquewhite;">my name is Eshwar</p>
+            <p style="background-color: rgb(250, 112, 0); color: antiquewhite;">my name is Eshwar</p>
+            <p style="background-color: rgb(250, 112, 0); color: antiquewhite;">my name is Eshwar</p>
+            <p style="background-color: rgb(250, 112, 0); color: antiquewhite;">my name is Eshwar</p>
+            <p style="background-color: rgb(250, 112, 0); color: antiquewhite;">my name is Eshwar</p>
+        </marquee>
+    </section>
+</aside>
+
+<div id="layers">
+
+<div id="layer1"><a href="RE.html" target="_blank">Royal Enfield</a></div>
+
+<div id="layer2"><a href="BMW.html" target="_blank">BMW</a></div>
+
+<div id="layer3">Harley DavidSon</div>
+<div id="layer4">KTM</div>
+<div id="layer5">Kawasaki</div>
+<div id="layer6">Beneli</div>
+<div id="layer7">Jawa</div>
+<div id="layer8">Suziki</div>
+<div id="layer9">Yamaha</div>
+<div id="layer10">Hero</div>
+<div id="layer11">TVS</div>
+
+</div>
+
+        
+        <div style="margin-top: 20px; border: 2px solid black; width:100%; height: 275px;">
+
+<div id="div1">
+    <div id="es">
+        <p class="p1">speed<!--Here the top speed of bikes i need to provide--></p>
+    </div>
+</div>
+
+<div id="div2">
+    <div id="btype">
+        <p class="p1">body types<!--Here i need to provide the different types of body like naked bobber chopper--></p>
+    </div>
+</div>
+
+<div id="div3">
+    <div id="gear">
+        <p class="p1">riding gear <!--Here i need to provide info about the saftey..mandotory,traffic rules in diff states like facts--></p>
+    </div>
+</div>
+
+<div id="div4">
+    <div id="mileage">
+        <p class="p1">mileage</p>
+    </div>
+</div>
+
+<div id="div5">
+    <div id="Wheels">
+        <a href="BG.png" target="_blank"><p class="p1"> Wheels</p></a>
+    </div>
+</div>
+
+</div>
+
+<footer align="center">&copy; all rights reserved for Eshwar</footer>
+</body>
+</html>
